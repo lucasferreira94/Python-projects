@@ -2,7 +2,7 @@
 JOGO DA VELHA
 '''
 
-# ABAIXO ESTAO AS POSICOES DA CERQUILHA
+# ABAIXO ESTAO AS POSIÇÕES DA CERQUILHA
 
 theBoard = {'top-L':'', 'top-M':'', 'top-R':'', 
             'mid-L':'','mid-M':'', 'mid-R':'',
@@ -30,8 +30,8 @@ def printBoard(board):
 
 turn = 'X'
 
-for i in range(9):  # O LAÇO OCORRERÁ 9 VEZES
-    printBoard(theBoard) # CHAMA A FUNÇÃO PARA PRINTAR A CERQUILHA
+for i in range(9):  
+    printBoard(theBoard) 
     print('Turn for ' + turn + '. Move on wich space? ') # INDICA A VEZ DO JOGADOR
     move = input() # O JOGADOR DEVERÁ COLOCAR A POSIÇÃO QUE QUER JOGAR
     theBoard[move] = turn # ASSOCIA A JOGADA AO JOGADOR
@@ -41,4 +41,4 @@ for i in range(9):  # O LAÇO OCORRERÁ 9 VEZES
         turn = 'O'
     else:
         turn = 'X'
-printBoard(theBoard) # PRINTA NA TELA A CEQUILHA PREENCHIDA
+printBoard(theBoard) 
