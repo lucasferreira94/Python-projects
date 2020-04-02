@@ -1,5 +1,3 @@
-# A FUNÇÃO ABAIXO IRÁ VERIFICAR SE O NÚMERO É PAR OU ÍMPAR 
-# E REALIZARÁ O CÁLCULO DE ACORDO COM O RESULTADO
 def collatz(number):
         if(number%2 == 0):
             number = (number//2)
@@ -7,8 +5,7 @@ def collatz(number):
             number = ((number*3)+1)
         return int(number)
 
-# INICIANDO A VARIÁVEL COM '0' PARA NÃO HAVER POSSÍVEIS 
-# INTERFERÊNCIAS DE MEMÓRIA
+# INICIANDO A VARIÁVEL COM '0' PARA NÃO HAVER POSSÍVEIS INTERFERÊNCIAS DE MEMÓRIA
 cont = 0
 
 # O LAÇO ABAIXO SE TRATA DE UM TRATAMENTO DE ERRO, PARA EVITAR O
